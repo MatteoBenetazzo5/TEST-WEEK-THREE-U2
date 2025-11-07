@@ -49,7 +49,7 @@ form.addEventListener("submit", (e) => {
   const imageUrl = document.getElementById("imageUrl").value.trim();
   const priceValue = document.getElementById("price").value.trim();
 
-  // validazioni base (senza Bootstrap alerts)
+  // validazioni base
   if (!name || !description || !brand || !imageUrl || !priceValue) {
     alert("Compila tutti i campi prima di salvare.");
     return;
