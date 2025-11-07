@@ -81,12 +81,12 @@ form.addEventListener("submit", (e) => {
     .catch(err => console.log("Errore nel salvataggio:", err));
 });
 
-// RESET (senza conferma)
+// RESET 
 resetBtn.addEventListener("click", () => {
   form.reset();
 });
 
-// DELETE (senza conferma)
+// DELETE
 deleteBtn.addEventListener("click", () => {
   fetch(API_URL + id, {
     method: "DELETE",
