@@ -1,0 +1,103 @@
+<!-- details.html (uniformata alla navbar e testi) -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Apple shop.com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-dark min-vh-100 d-flex flex-column" data-bs-theme="dark">
+    <header>
+      <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-logo"
+            ><img
+              src="./immagini/logo-apple.png"
+              style="width: 40px"
+              alt="Apple"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./homepage.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./back-office.html">Back-office</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <h1 class="text-center my-3">Apple Store</h1>
+      <h3 class="text-center my-3">Dettagli Prodotto</h3>
+    </header>
+
+    <main class="flex-grow-1">
+      <div class="container">
+        <div id="alerts" class="my-3"></div>
+        <div class="row justify-content-center my-3">
+          <div class="col col-12 col-md-8 col-lg-6">
+            <div class="card">
+              <img
+                id="image"
+                src="https://picsum.photos/600/600"
+                class="card-img-top"
+                alt="product-image"
+              />
+              <div class="card-body text-center">
+                <h5 class="card-title" id="name"></h5>
+                <p class="card-text">
+                  <span class="badge text-bg-secondary" id="brand"></span>
+                </p>
+                <p class="card-text" id="description"></p>
+                <p class="card-text fw-bold" id="price"></p>
+                <div class="d-flex gap-2 justify-content-center">
+                  <a id="edit-link" class="btn btn-warning">Modifica</a>
+                  <button class="btn btn-danger" id="delete-btn">
+                    Elimina
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col col-12 text-center">
+            <p>Apple Store - <span id="year"></span></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./scripts/details.js"></script>
+  </body>
+</html>
