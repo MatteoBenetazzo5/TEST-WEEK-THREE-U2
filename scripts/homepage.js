@@ -27,7 +27,7 @@ function renderProducts(list) {
           </div>
           <div class="card-footer d-flex gap-2">
             <a href="./details.html?productId=${p._id}" class="btn btn-outline-light w-100">Dettagli</a>
-            <a href="./back-office.html?productId=${p._id}" class="btn btn-warning w-100">Modifica</a>
+            <a href="./back-office.html?productId=${p._id}" class="btn bg-white text-black w-100">Modifica</a>
           </div>
         </div>
       </div>`;
