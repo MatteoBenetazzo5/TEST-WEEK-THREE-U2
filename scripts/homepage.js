@@ -20,7 +20,7 @@ function renderProducts(list) {
           <div class="card-body flex-grow-1">
             <h5 class="card-title d-flex justify-content-between align-items-start">
               <span>${p.name}</span>
-              <span class="badge text-bg-secondary">${p.brand || "Apple"}</span>
+              <span class="badge text-bg-light bg-white">${p.brand || "Apple"}</span>
             </h5>
             <p class="card-text">${p.description || ""}</p>
             <p class="fw-bold mb-0">${Number(p.price).toFixed(2)} €</p>

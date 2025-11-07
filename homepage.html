@@ -1,4 +1,3 @@
-<!-- homepage.html (aggiornata) -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,10 +8,14 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
   </head>
-  <body class="bg-dark min-vh-100 d-flex flex-column" data-bs-theme="dark">
+  <body class="bg-black min-vh-100 d-flex flex-column" data-bs-theme="dark">
     <header>
-      <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <nav class="navbar navbar-expand-md bg-gradiente ">
         <div class="container-fluid">
           <a class="navbar-logo"
             ><img
@@ -31,21 +34,51 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item">
-                <a class="nav-link active" href="./homepage.html">Home</a>
+                <a class="nav-link" href="./homepage.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./back-office.html">Back-office</a>
+                <a class="nav-link text-grey" href="./back-office.html"
+                  >Back-office</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Intrattenimento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Accessori</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV & Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Supporto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Mac</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">iPad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Watch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">AirPods</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
+            <form
+              class="d-flex align-items-center position-relative"
+              role="search"
+              id="search-form"
+            >
+              <button class="btn text-white" id="search-btn" type="button">
+                <i class="bi bi-search fs-4"></i>
               </button>
             </form>
           </div>
